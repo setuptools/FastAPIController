@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #6d6d6d;
+    color: #333;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#high_container {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background: #3d6083;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    z-index: 100000;
+}
+
+#title_text {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-9.5%, -80%);
+    color: #efefefa8;
+    z-index: -1;
+    font-size: 32px;
+}
+
+/* Основной контейнер для всего контента */
+#all-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 90px; /* Отступ, чтобы контент не был под шапкой */
+    overflow-y: auto; /* Добавлена прокрутка */
+    flex-grow: 1; /* Контент растягивается на всю доступную высоту */
+}
+
+/* текст */
+#text-div {
+    width: 350px;
+    height: 105px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #393939;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-text-field {
+    width: 93%; /* Занимает всю ширину родительского элемента */
+    height: auto; /* Высота будет автоматически подстраиваться */
+    min-height: 50px; /* Минимальная высота */
+    max-height: 600px; /* Максимальная высота, чтобы не выходить за пределы */
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    resize:none; /* Отключаем возможность изменения размера пользователем */
+}
+
+/* Поля */
+#urls {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#url {
+    width: 350px;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #393939;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a9a9a9;
+}
+
+#input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    position: relative;
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-field:first-of-type {
+    font-size: 18px;
+    padding: 18px;
+}
+
+/* Кнопка отправки */
+#submit-button {
+    text-align: center;
+    width: 155px;
+}
+
+/* Кнопки */
+#submit-button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Кнопки */
+#submit-button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.add-button {
+    background-color: #2196F3;
+}
+
+.add-button:hover {
+    background-color: #1976D2;
+}
+
+/* Контейнер */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Добавка */
+#spacer {
+    height: 70px;
+}
